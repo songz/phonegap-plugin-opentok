@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Cordova (Phonegap)-plugin-opentok by songz</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/songz/phonegap-plugin-opentok">Fork Me on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Cordova (Phonegap)-plugin-opentok</h1>
+            <h2>Cordova (aka Phonegap) plugin for opentok iOS SDK</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/songz/phonegap-plugin-opentok/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/songz/phonegap-plugin-opentok/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+      <span class="banner-fix"></span>
+
+      <section id="main_content">
+        <h1>Cordova Plugin for Opentok iOS SDK</h1>
+
+<p>Weave video chat into your web ( and now mobile! ) application.</p>
+
+<h2>Step 1. Install / create Cordova app</h2>
+
+<p><a href="http://phonegap.com/start/">http://phonegap.com/start/</a></p>
+
+<blockquote>
+<p>Make sure 'use automatic reference counting' is <strong>not</strong> selected when you create the project.</p>
+</blockquote>
+
+<h2>Step 2. Install Opentok Framework</h2>
+
+<ol>
+<li>Clone from <a href="https://github.com/opentok/opentok-ios-sdk">https://github.com/opentok/opentok-ios-sdk</a>
+</li>
+<li>Drag the Opentok.framework directory into your XCODE <em>Frameworks</em> folder</li>
+<li>click on your project in <strong>File Navigator</strong> and select <strong>Build Settings</strong><br>
+</li>
+</ol><blockquote>
+<p>Make sure <strong>Standard (armv7)</strong> is selected for <strong>Architectures</strong><br>
+Make sure <strong>armv7</strong> is the ONLY option selected for <strong>Valid Architectures</strong>  </p>
+</blockquote>
+
+<h2>Step 3. Install Opentok Phonegap Plugin</h2>
+
+<ol>
+<li>Clone from <a href="https://github.com/songz/phonegap-plugin-opentok">https://github.com/songz/phonegap-plugin-opentok</a>
+</li>
+<li>Copy <code>OpentokPlugin.h</code>, <code>OpentokPlugin.m</code>, <code>OpentokStreamInfo.h</code>, and <code>OpentokStreamInfo.h</code> into your <strong>Classes</strong> folder</li>
+<li>Copy <code>Opentok.iOS.js</code> into your <code>www</code> folder</li>
+</ol><h3>Done!</h3>
+
+<hr><h2>Getting Started:</h2>
+
+<p>All your editing will be done in your www folder.</p>
+
+<p>To use the opentok library, make sure you include <strong>Opentok.iOS.js</strong> file in your HTML document.<br><code>&lt;script type="text/javascript" charset="utf-8" src="Opentok.iOS.js"&gt;&lt;/script&gt;</code></p>
+
+<p>For smoother experience video video, you must prevent dragging. Uncomment the following lines in the HTML:</p>
+
+<pre><code>function preventBehavior(e) 
+{ 
+  e.preventDefault(); 
+};
+document.addEventListener("touchmove", preventBehavior, false);
+</code></pre>
+
+<p>All code should be written in <code>onDeviceReady</code> function because it is executed after all the devices/libraries DOM has loaded.</p>
+
+<pre><code>function onDeviceReady()
+{
+    // do your thing!
+}
+</code></pre>
+
+<hr>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/songz">songz</a> can be found on <a href="https://github.com/songz/phonegap-plugin-opentok">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
